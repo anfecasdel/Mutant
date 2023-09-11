@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Detección de Mutantes</h2>
+    <form>
+      <div class="form-group">
+        <label for="dnaSequence">Secuencia de ADN:</label>
+        <input
+          type="text"
+          id="dnaSequence"
+          name="dnaSequence"
+          class="form-control"
+          [(ngModel)]="dnaInput"
+        />
+      </div>
+      <button (click)="detectMutant()" class="btn btn-primary">Detectar Mutante</button>
+    </form>
+    <div *ngIf="result !== null">
+      <h3>Resultado:</h3>
+      <p>{{ result ? 'Es un mutante' : 'No es un mutante' }}</p>
+    </div>
+  </div>
+  

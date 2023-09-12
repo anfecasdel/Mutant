@@ -1,27 +1,41 @@
-# MutantDetector
+# Mutant Detector
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Este proyecto es una aplicación de detección de mutantes basada en secuencias de ADN. La aplicación permite a los usuarios ingresar secuencias de ADN y determinar si son mutantes o no según ciertos criterios.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Ingresar secuencias de ADN en un formulario.
+- Detectar si una secuencia de ADN es mutante.
+- Mostrar el resultado de la detección (mutante o no mutante).
+- Visualizar las secuencias de ADN ingresadas.
 
-## Code scaffolding
+## Tecnologías Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular: Framework de desarrollo web.
+- HTML, CSS: Lenguajes de marcado y estilos.
+- TypeScript: Lenguaje de programación.
+- Git: Control de versiones.
+- ...
 
-## Build
+## Instalación y Uso
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clona el repositorio**
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/tu-usuario/mutant-detector.git
+   cd mutant-detector
+## Instala las dependencias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+bash
+Copy code
+npm install
 
-## Running end-to-end tests
+## Ejecuta la aplicación
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+bash
+Copy code
+ng serve
+La aplicación se ejecutará en http://localhost:4200. Abre un navegador y accede a esta URL para utilizar la aplicación.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Cómo Detectar Mutantes
+La detección de mutantes se basa en ciertos criterios que puedes personalizar en la función isMutant del componente MutantDetector. Consulta el código fuente para obtener más detalles sobre la implementación.
